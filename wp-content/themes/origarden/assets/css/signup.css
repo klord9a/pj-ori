@@ -1,0 +1,719 @@
+#prdRegister {
+    height: auto;
+    padding-top: 3rem;
+    background-size: cover;
+}
+#prdRegister .fp-tableCell {
+    display: flex;
+    align-items: center;
+}
+#prdRegister .form {
+    flex-flow: column;
+    align-items: flex-end;
+}
+#prdRegister .--pageTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-title);
+    margin-top: 3rem;
+}
+#prdRegister .--pageTitle h1 {
+    background-image: linear-gradient(to right, #74c57a, #1f7c6c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.prdGuidance .--step {
+    width: 15%;
+    margin-right: 8px;
+}
+.prdGuidance .--selectedTerm {
+    width: 80%;
+}
+.prdGuidance .--selectedTerm button {
+    box-shadow: 0.5px 0.9px 13px 0 rgb(0 0 0 / 15%);
+    background-image: linear-gradient(to right, #74c57a, #1f7c6c);
+    border-radius: 15px;
+    color: white;
+    padding: 10px;
+    width: 70%;
+    border: 0;
+    margin-bottom: 20px;
+    transition: all .5s ease-out;
+}
+
+.prdGuidance .--selectedTerm button:hover {
+    transform: scale(.9);
+    transition: all .5s ease-out;
+}
+
+.prdGuidance .--selectedTerm p {
+    font-weight: 700;
+}
+
+.prdGuidance {
+    border-right: 1px dashed;
+}
+
+.prdGuidance .--step p {
+    font-weight: 700;
+    background-image: linear-gradient(to right, #51aa59, #1c8281), linear-gradient(to bottom, #e3e3e3, #e3e3e3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.prdRegForm .--subTitle {
+    font-weight: 700;
+    margin-bottom: 2rem;
+    display: flex;
+    opacity: 1;
+    justify-content: center;
+    transform: none;
+}
+.prdRegForm .--headline {
+    margin-right: 10px;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #51aa59, #1c8281), linear-gradient(to bottom, #e3e3e3, #e3e3e3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.prdRegForm .--step {
+    display: flex;
+}
+.itemForm {
+    justify-content: flex-end;
+}
+
+.itemForm button {
+    border-radius: 21.3px;
+    box-shadow: 0.5px 0.9px 13px 0 rgb(0 0 0 / 15%);
+    background-image: linear-gradient(to right, #74c57a, #1f7c6c);
+    width: 52%;
+    height: 35px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all .5s ease-out;
+    border: none;
+}
+
+.itemForm button:hover {
+    transform: scale(.9);
+    transition: all .5s ease-out;
+    color: white
+}
+
+.itemForm label {
+    flex: 0 0 auto;
+    color: #243141;
+    /* display: flex; */
+    font-size: 15px;
+}
+
+
+
+.itemForm input,
+.itemForm select,
+.itemForm textarea {
+    height: 32px;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 1.5px 2.6px 15px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+
+.itemForm select {
+    margin-bottom: .5rem;
+    color: #a3a3a3;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.itemForm textarea {
+    max-height: 60px;
+    min-height: 60px;
+}
+.itemForm.seclected p {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 0;
+}
+.itemForm {
+    display: flex;
+    justify-content: space-between;
+}
+.itemForm .--formGroup {
+    width: 100%;
+}
+#prdRegister article {
+    text-align: center;
+}
+.prdRegForm  .--formWrapper {
+    display: flex;
+    justify-content: space-around;
+}
+.prdRegForm{
+    margin-bottom: 1rem;
+}
+.prdRegForm .--right{
+    display: flex;
+    flex-flow:column ;
+    justify-content: space-around;   
+}
+.submitButton {
+    margin-top: 1rem;
+}
+.itemForm span:nth-child(1){
+    color: red;
+}
+.itemForm label {
+    width: 45%;
+}
+.itemForm span.wpcf7-form-control-wrap{
+    width: 100%;
+}
+.itemForm:nth-child(8) label{
+    display: flex;
+    align-items: center;
+}
+#requiredExhibit .--informBox p{
+    margin-bottom: 0 ;
+}
+.tablect{
+    justify-content: flex-end !important;
+    justify-content: space-between !important;
+    
+}
+
+.tablect table{
+    flex: 0 0 70%;
+    background: #ffffff85;
+    line-height: 18px;
+}
+.tableb:nth-child(1) table:nth-child(1){
+    flex: 0 0 54%;
+}
+.tableb:nth-child(1) table:nth-child(2){
+    flex: 0 0 45%;
+    /* height: auto !important; */
+}
+.tableb:nth-child(1) table{
+    height:330px!important;
+}
+.tablect td{
+    border: 1px solid #d1caca;
+    padding: .3rem .5rem;
+    /* font-size: 14px; */
+}
+.tableb:nth-child(n+2) .tablect{
+    justify-content: center !important;
+} 
+.tableb:nth-child(2) .tablect {
+    justify-content: center !important;
+}
+td p{
+    margin-bottom: 0;
+    padding: 0 !important;
+}
+td strong{
+    color: #1f7c6c;
+    display: flex;
+    padding: .5rem 0;
+    justify-content: center;
+}
+.tab-content .tableb:nth-child(1) .tablect table tr:nth-child(1){
+    height: 40px !important;
+}
+.itemTerm button{
+    border: none;
+    background: linear-gradient(to right, #74c57a, #1f7c6c);
+    padding: 5px 10px;
+    margin-top: 1rem;
+    border-radius:17.5px;
+    color: #FFFFFF;
+    width: 50%;
+    box-shadow: none !important;
+}
+.modal-backdrop.show{
+    opacity: 0  !important;
+    pointer-events: none;
+}
+.modal-content{
+    width: 200% !important;
+}
+.modal-body button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    box-shadow: none !important;
+    transition: all .5s ease-out;
+}
+.modal-body .--headlineItem{
+    text-align: center;
+}
+.modal::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000000a3;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.modal-body button:hover{
+    transform: rotate(90deg);
+}
+.tableb p{ 
+    display: none;
+}
+@media (min-device-width:769px) and (max-device-width:1279px) {
+    #prdRegister {
+        height: auto;
+        padding: 0;
+    }
+    #requiredExhibit .--content .--informBox{
+        line-height: 20px;
+    }
+    #customers .itemlist{
+        width: 100%;
+    }
+    #customers .itemlist:nth-child(6) {
+        width: 100%;
+    }
+    .prdRegForm .--formWrapper {
+        height: auto;
+    }
+    .itemForm {
+        flex-flow: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .itemForm label p {
+        margin-bottom: 0;
+    }
+    .itemForm label {
+        width: 100%;
+    }
+    .itemForm br{
+        display: none;
+    }
+    .itemForm label br {
+        display: none;
+    }
+  
+    .itemForm a {
+        width: 100%;
+    }
+    .prdGuidance .--selectedTerm button {
+        width: 95%;
+    }
+    .prdRegForm .--subTitle {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-device-width:641px) and (max-device-width:768px) {
+    .itemPage.col-md-3{
+        width: 100% !important;
+    }
+    .itemPage:nth-child(4) .--txt::after{
+        display: none;
+    }
+    .itemPage:nth-child(5) .--txt::after{
+        display: none;
+    }
+    .itemTerm button{
+        display: none;
+    }
+    #terms .--txt p{
+        height: max-content;
+    }
+    #procedure .--detail{
+        grid-template-columns:50% 50%;
+    }
+    #procedure .--detail {
+        grid-template-rows: 25% 25% 25% 25%;
+    }
+    .itemPage:nth-child(8) .--txt::after{
+        display: none;
+    }
+    .itemPage:nth-child(2) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .itemPage:nth-child(3) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .itemPage:nth-child(4) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .itemPage:nth-child(5) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .itemPage:nth-child(6) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .itemPage:nth-child(7) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    .itemPage:nth-child(8) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    #prdRegister {
+        height: auto;
+        padding: 0;
+    }
+    #requiredExhibit .--content .--informBox{
+        line-height: 20px;
+    }
+    #customers .--contentCustomer{
+        margin-left: 1.5rem;
+    }
+    #prdRegister .prdContent {
+        flex-flow: column;
+    }
+    .prdContent .--contentGuide {
+        width: 100%;
+    }
+    .prdContent .--contentForm {
+        width: 100%;
+    }
+    .itemlist .--detailCustomer{    
+        line-height: 20px;
+
+    }
+    .prdGuidance {
+        border-right: none;
+    }
+    .itemForm .--formGroup {
+        width: 100%;
+    }
+    .itemForm.submitButton.d-flex.align-items-center {
+        display: flex;
+        justify-content: center;
+    }
+    #terms .--note{
+        padding: 0;
+    }
+    #terms .--termsContent{
+        flex-flow: column;
+    }
+    .itemTerm{
+        width: 100% !important;
+        margin-bottom: 1rem;
+        text-align: justify;
+    }
+    section#customers {
+        height: auto;
+    }
+    #customers .--subtitle{
+        width: 100%;
+    }
+    #customers .itemlist {
+        width: 100%;
+    }
+    #customers .itemlist:nth-child(6) {
+        width: 100%;
+    }
+    section#customers main {
+        padding-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    .prdRegForm .--headline{
+        width: 15%;
+    }
+    section#procedure {
+        height: max-content;
+        padding-bottom: 2rem;
+        background-image: url('/wp-content/uploads/2021/05/packground.jpg');
+    }
+    section#procedure main {
+        padding-top: 3rem;
+    }
+    .itemPage {
+        width: 100% !important;
+    }
+    .itemPage .--txt::after {
+        display: none;
+    }
+    .tablect{
+        display: flex;
+        flex-flow: column;
+    }
+    .tablect .--left{
+        width: 100% !important;
+        margin-bottom: 1rem;
+    }
+    .tablect .--right{
+        width:100% !important;
+    }
+    .tablect .--headlineBox{
+        text-align: center;
+    }
+    .tableb table{
+        margin-bottom: 1rem;
+        line-height: 20px;
+    }
+    li.nav-item{
+        width: 30%!important;
+    }
+    .tablect td{
+        line-height: 20px;
+    }
+    .modal-content{
+        height: max-content!important;
+        width: 100% !important;
+    }
+}
+@media (max-device-width:640px){
+    .itemPage:nth-child(8) .--txt::after{
+        display: none;
+    }
+    .modal-content{
+        height: max-content !important;
+        width: 100% !important;
+    }
+    .itemPage:nth-child(3) .--txt::after {
+        position: absolute;
+        top: 100%;
+        transform: rotate( 
+    90deg
+     );
+        left: 43%;
+    }
+    #procedure .--detail {
+        grid-template-rows:auto ;
+    }
+    .itemTerm button{
+        display: none;
+    }
+    #terms .--txt p{
+        height: max-content;
+    }
+    #customers .itemlist:nth-child(6) {
+        width: 100%;
+    }
+    #procedure .--detail{
+        grid-template-columns:100%;
+    }
+    .itemPage.col-md-3{
+        width: 100%;
+    }
+    section#customers{
+        padding-bottom: 2rem;
+    }
+    .itemPage:nth-child(5) .--txt::after{
+        content: '';
+        width: 25px;
+        height: 48px;
+        display: block;
+        position: absolute;
+        right: -35px;
+        top: 47%;
+        transform: translateY(-50%);
+        background-image: url(/wp-content/uploads/2021/05/Muiten.png);
+    }
+    .itemPage:nth-child(2) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .itemPage:nth-child(3) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .itemPage:nth-child(4) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    .itemPage:nth-child(5) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    .itemPage:nth-child(6) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+    .itemPage:nth-child(7) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 7;
+        grid-row-end: 8;
+    }
+    .itemPage:nth-child(8) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 8;
+        grid-row-end: 9;
+    }
+    #requiredExhibit .--content .--informBox{
+        line-height: 20px;
+    }
+    #procedure .--procedureTitle{
+        padding-top:3rem ;
+    }
+    .itemPage .--txt::after{
+        right: 50%;
+        transform: rotate(90deg);
+        top: 100%;
+    }
+    .itemPage:nth-child(4) .--txt::after{
+    transform: rotate(
+90deg
+);
+    left: 43%;
+    top: 100%;
+    }
+    .itemPage:nth-child(n+5) .--txt:after{
+        transform: rotate(
+90deg
+);
+        top: 100%;
+        left: 43%;
+    }
+    #customers .--subtitle{
+        width: 100%;
+    }
+    #customers .itemlist{
+        width: 100%;
+    }
+    #customers .--contentCustomer{
+        margin-left: .5rem;
+    }
+    #terms .--note{
+        padding: 0;
+    }
+    #terms .--termsTitle h1{
+        width: 100%;
+    }
+    #terms .--termsContent{
+        flex-flow: column;
+    }
+    .itemTerm{
+        width: 100%;
+        margin-bottom: 1rem;
+        text-align: justify;
+    }
+    #requiredExhibit .--pageTitle h1{
+        width: 100% !important;
+    
+    }
+    ul#pills-tab{
+        flex-flow: column;
+    }
+    li.nav-item{
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    #prdRegister{
+        padding-top: 0;
+    }
+    #prdRegister .--pageTitle h1{
+        text-align: center;
+    }
+    .prdGuidance{
+        flex-flow: column;
+        border: none;
+    }
+    .prdGuidance .--step{
+        width: 100%;
+    }
+    .prdGuidance  p{
+        width: 100%;
+        text-align: center;
+    }
+    .prdGuidance .--selectedTerm{
+        text-align: center;
+        width: 100%;
+        text-align: center;
+    }
+    .prdGuidance .--selectedTerm button{
+        width: 100%;
+    }
+    .prdRegForm .--step{
+        flex-flow: column;
+        display: block;
+    }
+    .prdRegForm  p{
+        text-align: center !important;
+        display: block;
+    }
+    .itemForm span.wpcf7-form-control-wrap{
+        width: 100%;
+    }
+    .tablect{
+        display: flex;
+        flex-flow: column;
+    }
+    .tablect .--left{
+        width: 100% !important;
+        margin-bottom: 1rem;
+    }
+    .tablect .--right{
+        width: 100% !important;
+        
+    }
+    .tablect .--informBox{
+        text-align: justify;
+    }
+    #requiredExhibit li .nav-link{
+        margin-bottom: 1rem;
+        padding: 1rem 0.2rem;
+    }
+    .tableb table{
+        margin-bottom: 1rem;
+    }
+    .tableb{
+        margin: 0 .5rem;
+    }
+    .itemForm{
+        flex-flow: column;
+        margin-top: 1rem;
+    }
+    .itemForm label{
+        width: 100%;
+    }
+    .itemForm br{
+        display: none;
+    }
+    .itemForm p{
+        display: none;
+    }
+}
+

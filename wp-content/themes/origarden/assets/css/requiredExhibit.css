@@ -1,0 +1,167 @@
+section#requiredExhibit {
+    height: auto;
+    background-image: url('/wp-content/uploads/2021/05/2.jpg');
+    background-size: cover;
+}
+
+#requiredExhibit .--pageTitle {
+    font-family: var(--font-title);
+    background-image: linear-gradient(to right, #74c57a, #1f7c6c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#requiredExhibit .--pageTitle h1 {
+    /* width: 82%; */
+}
+
+#requiredExhibit .--detail {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ul#pills-tab {
+    padding-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+#requiredExhibit li .nav-link {
+    width: 65%;
+    border: 1px dashed #243141;
+    color: black;
+    font-weight: 700;
+    border-radius: 15px;
+    transition: all .5s ease-out;
+    width: 100%;
+    box-shadow: 0.5px 0.9px 13px 0 rgba(0, 0, 0, 0.15);
+    background: white;
+}
+
+#requiredExhibit li .nav-link.active {
+    background-image: linear-gradient(to right, #74c57a, #1f7c6c);
+    color: #fff;
+}
+
+li.nav-item {
+    display: flex;
+    justify-content: center;
+    /* height: 6rem; */
+    width: 22%;
+    margin: 0px 10px;
+}
+
+button#pills-0-tab:focus {
+    box-shadow: 0.5px 0.9px 13px 0 rgb(0 0 0 / 15%);
+    background-image: linear-gradient(to right, #74c57a, #1f7c6c);
+    border-radius: 15px;
+    color: white;
+    padding: 10px;
+}
+
+button#pills-1-tab:focus {
+    box-shadow: 0.5px 0.9px 13px 0 rgb(0 0 0 / 15%);
+    background-image: linear-gradient(to right, #74c57a, #1f7c6c);
+    border-radius: 15px;
+    color: white;
+    padding: 10px;
+}
+
+button#pills-2-tab:focus {
+    box-shadow: 0.5px 0.9px 13px 0 rgb(0 0 0 / 15%);
+    background-image: linear-gradient(to right, #74c57a, #1f7c6c);
+    border-radius: 15px;
+    color: white;
+    padding: 10px;
+}
+
+button#pills-0-tab:hover {
+    transform: scale(.97);
+    transition: all .5s ease-out;
+}
+
+button#pills-1-tab:hover {
+    transform: scale(.97);
+    transition: all .5s ease-out;
+}
+
+button#pills-2-tab:hover {
+    transform: scale(.97);
+    transition: all .5s ease-out;
+}
+
+#pills-home .--boxContent,
+.--headlineBox,
+.--informBox {
+    border: 1px solid #243141;
+    padding: 5px 10px;
+    background: white;
+}
+
+#pills-0 .--boxContent {
+    width: 100%;
+}
+
+#pills-1 .--boxContent {
+    width: 100%;
+}
+
+#pills-2 .--boxContent {
+    width: 100%;
+}
+
+#pills-0 .--headlineBox {
+    height: 5%;
+    color: #469e73;
+    width: 50%;
+}
+
+#pills-1 .--headlineBox {
+    height: 5%;
+    color: #469e73;
+    width: 50%;
+}
+
+#pills-2 .--headlineBox {
+    height: 5%;
+    color: #469e73;
+    width: 50%;
+}
+
+#pills-0 .--informBox {
+    width: 50%;
+}
+
+#pills-1 .--informBox {
+    width: 50%;
+}
+
+#pills-2 .--informBox {
+    width: 50%;
+}
+
+#pills-0 .--informBox {
+    font-size: 14px;
+    width: 50%;
+    line-height: 18px;
+}
+
+#pills-1 .--informBox {
+    width: 50%;
+    line-height: 16px;
+    padding: 5px 14px;
+}
+
+#pills-2 .--informBox {
+    width: 50%;
+    line-height: 20px;
+}
+tr td p{
+    padding: 0;
+}

@@ -1,0 +1,190 @@
+.difBanner {
+    display: flex;
+    color: #FFFFFF;
+    background-blend-mode: multiply;
+    background-color: #000000a3;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.difBanner .--content{
+    margin-bottom: 15rem;
+}
+a.btn-link:focus{
+    outline: none;
+}
+.difBanner .--subTitle p{
+    margin-bottom: 0;
+}
+.difHabitat{
+    background-blend-mode: multiply;
+    background-color: #000000a3;
+    color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.segTitle{
+    margin: 0 20%;
+}
+.difHabitat .--content{
+    padding: 2.5rem 0;
+}
+.difHabitat .--title{
+    font-family: var(--font-bodyMedium);
+}
+.difHabitat .--title h3{
+    text-transform: uppercase;
+}
+.difHabitat .--subTitle{
+    font-size: 14px;
+   
+}
+.difHabitat .--content img{
+    width: 100%;
+    border: 3px solid #FFFFFF;
+    border-radius: 15px;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.difHabitat.fp-completely .--clip, .difPerformance.fp-completely .--clip {
+    transform: none;
+    opacity: 1;
+}
+.difHabitat .--clip{
+    opacity: 0;
+    transform: scale(.6);
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+    display: block;
+    margin: auto;
+    transition: opacity .3s ease, transform .5s cubic-bezier(0.4, 0, 1, 1);
+    transition-delay: .5s;
+}
+.difHabitat .video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.difHabitat .video:hover {
+    transform: scale(.9) translate(-50%, -50%);
+}
+
+
+
+.difPerformance{
+    background-blend-mode: multiply;
+    background-color: #000000a3;
+    color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.difPerformance .--content{
+    padding: 2.5rem 0;
+}
+.difHabitat .--title{
+    font-family: var(--font-bodyMedium);
+}
+.difPerformance .--title{
+    text-transform: uppercase;
+    font-family: var(--font-bodyMedium);
+}
+.difPerformance .--subTitle{
+    font-size: 14px;
+}
+.difPerformance .--content img{
+    width: 100%;
+    border: 3px solid #FFFFFF;
+    border-radius: 15px;
+    height: 50vh;
+    object-fit: cover;
+}
+.difPerformance .--clip{
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+    display: block;
+    margin: auto;
+    transition: opacity .3s ease, transform .5s cubic-bezier(0.4, 0, 1, 1);
+    transition-delay: .5s;
+    opacity: 0;
+    transform: scale(.6);
+}
+.difPerformance .video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all .5s cubic-bezier(0.04, 0.98, 1, 1);
+    transform:translate(-50%, -50%) ;
+}
+.difPerformance .video:hover {
+    transform: scale(.9) translate(-50%, -50%);
+}
+
+
+
+
+@media(max-width: 768px){
+    .difBanner{
+        height:70vh !important;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .difBanner .--content{
+        margin-bottom:0;
+    }
+
+    .difHabitat{
+        height: auto !important;
+    }
+    .segTitle{
+        margin:auto;
+    }
+    .difHabitat .--clip{
+        margin:0;
+        width:100%;
+        height:auto;
+        margin-top: 1.5rem;
+    }
+    .difHabitat .--subTitle{
+        line-height: 26px;
+    }
+
+    
+    .difPerformance{
+        height: auto !important;
+    }
+    .difPerformance .--clip{
+        margin:0;
+        width:100%;
+        height:auto;
+        margin-top: 1.5rem;
+    }
+     .difPerformance .--subTitle{
+        line-height: 26px;
+    }
+    .difPerformance .footer{
+        position: relative;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1279px){
+    .difHabitat .--clip{
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    .difPerformance .--clip{
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+}

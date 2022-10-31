@@ -1,0 +1,351 @@
+.utilBanner{
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+
+.utilBanner .--content{
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    z-index: 1;
+    
+}
+.utilBanner .--subTitle .--txt{
+    margin: 0 !important;
+}
+.utilBanner .--title{
+    font-family: var(--font-bodyMedium);
+}
+.utilBanner::after{
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 100%;
+    background: linear-gradient( 180deg, rgb(0 0 0 / 0%) 0%, rgb(25 0 0 / 65%) 56.49%, rgb(0 0 0 / 85%) 100%);
+    height: 35%;
+}
+.utilBanner .--subTitle{
+    width: 40%;
+    line-height: 20px;
+    font-size: 15px;
+}
+.utilPremises{
+    height: 100vh;
+    background:#e4d6c4 ;
+    display: flex;
+    align-items: center;
+}
+.utilPremises .--content {
+    justify-content: center;
+    margin-top: 4rem;
+}
+.utilPremises .--img .--imghouse{
+    width: 100%;
+    height: 70vh;
+}
+.utilPremises .parttern .--imgtop{
+    position: absolute;
+    top: 0;
+    width: 16%;
+    transform: rotate(180deg);
+    left: 22%;
+}
+.utilPremises .parttern .--imgbottom{
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+    width: 30%;
+    z-index: 1;
+}
+.utilPremises .--img{
+    position: relative;
+    height: 100%;
+}
+.list-marker{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fancybox-content{
+    width: 65%;
+}
+.list-marker img{
+    width: 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.5rem;
+    opacity: 0;
+    display: block !important;
+	pointer-events: auto;
+}
+.fancybox-content img{
+    width: 100%;
+    height: 100%;
+}
+.list-marker .number{
+    cursor: pointer;
+    transition: all .5s ease-out;
+    font-size: 12px;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0;
+}
+.list-marker .number:hover{
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 14px;
+    background: #74c57a;
+    border: 1px solid #FFFFFF;
+}
+.list-marker span{
+    position: absolute;
+}
+
+.list-marker .number.active {
+    transform: scale(1.5);
+    background: #74c57a;
+    border: 1px solid #fff;
+}
+.list-marker span:nth-child(1){
+    top: 47%;
+    left: 54%;
+}
+.list-marker span:nth-child(2){
+    top: 47%;
+    left: 62%;
+}
+.list-marker span:nth-child(3){
+    top: 30%;
+    left: 48%;
+}
+.list-marker span:nth-child(4){
+    top: 20%;
+    left: 48%;
+}
+.list-marker span:nth-child(5){
+    top: 44%;
+    left: 44%;
+}
+.list-marker span:nth-child(6){
+    top: 51%;
+    left: 37%;
+}
+.list-marker span:nth-child(7){
+    top: 64%;
+    left: 37%;
+}
+.list-marker span:nth-child(8){
+    top: 67%;
+    left: 48%;
+}
+.list-marker span:nth-child(9){
+    top: 54%;
+    left: 47%;
+}
+.list-marker span:nth-child(10){
+    top: 63%;
+    left: 62%;
+}
+.list-marker span:nth-child(11){
+    top: 75%;
+    left: 48%;
+}
+.list-marker span:nth-child(12){
+    top: 54%;
+    left: 74%;
+}
+.list-marker span:nth-child(13){
+    top: 55%;
+    left: 18%;
+}
+.list-marker span:nth-child(14){
+    top: 55%;
+    left: 84%;
+}
+.list-marker span:nth-child(15){
+    top: 95%;
+    left: 59%;
+}
+.list-marker span:nth-child(16){
+    top: 55%;
+    left: 59%;
+}
+.list-marker span:nth-child(17){
+    top: 34%;
+    left: 28%;
+}
+.list-marker span:nth-child(18){
+    top: 36%;
+    left: 68%;
+}
+.list-marker span:nth-child(19){
+    top: 70%;
+    left: 27%;
+}
+.list-marker span:nth-child(20){
+    top: 69%;
+    left: 68%;
+}
+
+
+
+.utilPremises ul{
+    line-height: 30px;
+    flex: 0 0 auto;
+}
+.number {
+    color: #FFFFFF;
+    background: #bd1e2c;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 13px;
+    font-size: 13px;
+}
+.utilPremises li{
+    display: flex;
+    align-items: center;
+    font-family: var(--font-bodyMedium);
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.utilPremises li.active {
+    transform: translate(10px,0) scale(1.1);
+}
+
+.utilPremises li.active p {
+    color: #25816d !important;
+}
+.utilPremises li p:nth-child(2){
+    margin-bottom: 0;
+    color: #000000b3;
+}
+
+@media (min-width: 769px) and (max-device-width: 1279px){
+    .utilPremises .--img .--imghouse{
+        height: 50vh;
+        width: 100%;
+    }
+    .utilPremises .--content{
+        display: block !important;
+    }
+    .utilPremises ul{
+        display:flex;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+    }
+    .utilPremises li{
+        max-width: 33%;
+        flex: 0 0 33%;
+    }
+}
+
+@media(max-width: 768px){
+    .list-marker .number{
+        transform: scale(.9) translate(0, -6px);
+    }
+ 
+    .utilBanner{
+        height: 85vh !important;
+        padding:15px;
+    }
+    .utilBanner::after{
+        height: 54%;
+    }
+    .utilBanner .--content{
+        margin-bottom:0 !important;
+        bottom:0;
+        flex-flow: column;
+        justify-content:center;
+        align-items:center;
+        padding: 0 10px 20px 10px;
+        text-align:justify;
+    }
+    .utilBanner .--subTitle{
+        line-height:25px;
+    }
+    .utilBanner .--title{
+        width:100%;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+    }
+     .utilBanner .--title .--txt{
+         margin:0 !important;
+         text-align:center;
+     }
+     .utilBanner .--title .--txt h1{
+         margin-bottom:.5rem;
+     }
+    .utilBanner .--subTitle{
+        width:100%;
+        
+    }
+
+
+    .utilPremises{
+        height:auto !important;
+        position: relative;
+    }
+    .utilPremises .--content{
+        flex-flow:column;
+        padding-top: 1.5rem;
+        margin-top: 0;
+        margin-bottom: 4vh;
+    }
+    .utilPremises .--img .--imghouse{
+        width:100%;
+        height: auto;
+    }
+    li.number{
+        flex: 0 0 10%;
+    }
+    .utilPremises li p{
+        flex: 1;
+        margin-bottom: 0;
+        color: #000000b3;
+        line-height: 18px;
+    }
+    .utilPremises ul{
+        display:flex;
+        flex-flow:wrap;
+        padding-left:0;
+        margin-top: 2rem;
+    }
+    .utilPremises li{
+        max-width:50%;
+        width:100%;
+        margin-bottom: .5rem;
+    }
+    .utilPremises .--imgbottom{
+        display:none
+    }
+    .utilPremises .--imgtop{
+        display:none
+    }
+    .footer{
+        position: absolute;
+        bottom: 0;
+    }
+    .fancybox-content{
+        height: auto !important;
+    }
+    .fancybox-content img{
+        width: 100vw;
+        height: auto;
+    }
+}
+
+
+

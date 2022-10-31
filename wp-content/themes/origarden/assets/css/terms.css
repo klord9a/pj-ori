@@ -1,0 +1,88 @@
+section#terms {
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+}
+
+#terms .fp-tableCell {
+    align-items: center;
+}
+
+#terms main {
+    display: flex;
+    flex-flow: column;
+    justify-self: center;
+}
+
+#terms .--termsTitle {
+    text-align: center;
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+#terms .--termsTitle h1 {
+    font-family: var(--font-title);
+    background-image: linear-gradient(to right, #51aa59, #1c8281);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 45%;
+}
+
+#terms .--note {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding: 0 25%;
+}
+
+#terms .--termsContent {
+    display: flex;
+}
+
+.itemTerm {
+    border-radius: 15px;
+    border: dashed 0.5px #c5c5c5;
+    background-color: #ffffff;
+    width: 350px;
+    text-align: justify;
+    padding: 1.5rem;
+    margin-right: 13px !important;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.itemTerm .--headlineItem p {
+    margin: 0;
+}
+
+#terms .--txt p {
+    margin: 0;
+    color: #243141;
+    line-height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 25px;
+    -webkit-line-clamp: 3;
+    height: 75px;
+}
+.modal-content {
+    border-radius: 20px !important;
+    padding: 2rem;
+    box-shadow: 0 12px 24px rgb(0 0 0 / 20%);
+}
+.modal-content .modal-body{
+    padding: 2rem;
+    background: #FFF;
+    box-shadow: 0 12px 24px rgb(0 0 0 / 10%);
+}
+.modal-content .modal-body p{
+    height: 100% !important;
+}
+
+
+

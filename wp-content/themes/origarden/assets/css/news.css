@@ -1,0 +1,405 @@
+#news {
+    height: 100vh;
+}
+
+.modal-dialog-scrollable .modal-body::-webkit-scrollbar ,#news .--others::-webkit-scrollbar {
+    width: 4px;
+}
+
+.modal-dialog-scrollable .modal-body::-webkit-scrollbar-track,#news .--others::-webkit-scrollbar-track {
+    background: #e1e1e1;
+}
+
+.modal-dialog-scrollable .modal-body::-webkit-scrollbar-thumb, #news .--others::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-image: linear-gradient(to top, #51aa59, #1c8281);
+}
+
+.--others::-webkit-scrollbar-thumb:hover {
+    border-radius: 2px;
+    background-image: linear-gradient(to bottom, #51aa59, #1c8281);
+}
+
+#news .--pageTitle h1 {
+    font-family: var(--font-title);
+    background: -webkit-linear-gradient(45deg, #74c57a, #1f7c6c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    width: max-content;
+}
+
+#news .--pageTitle {
+    text-align: center;
+    background-image: linear-gradient(to right, #51aa59, #1c8281), linear-gradient(to bottom, #e3e3e3, #e3e3e3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#news .--featuredPost {
+    border-radius: 10px;
+    box-shadow: -1px 0px 8px 0px grey;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    background-color: white;
+}
+
+#news .--others {
+    height: 460px;
+}
+
+.itemNews {
+    background: #fff;
+    margin-bottom: .95rem;
+    border-radius: .5rem;
+    box-shadow: 0 2px 100px rgb(0 0 0 / .1);
+    overflow: hidden;
+}
+
+.itemNews .--img {
+    width: 40%;
+    height: inherit;
+    display: block;
+    object-fit: cover;
+}
+
+img.detailButton {
+    width: 10px;
+    height: auto;
+    margin: 3px;
+}
+
+.itemNews .--title {
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-weight: 600;
+    text-align: left;
+}
+
+.itemNews .--title a {
+    text-decoration: none;
+    color: black;
+}
+.itemNews img{
+    width: 32%;
+    object-fit: cover;
+}
+.itemNews button{
+    display: flex;
+    justify-content: flex-start;
+}
+.itemNews .--time {
+    background-image: linear-gradient(to top, #51aa59, #1c8281);
+    color: #fff;
+    padding: .25rem .5rem;
+    border-radius: 25px;
+    display: inline-block;
+    margin: .5rem 0;
+}
+
+.itemNews .--excerp {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: start;
+}
+
+.itemNews .--link {
+    text-align: end;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.itemMainPost {
+    margin-bottom: .5rem;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0 2px 100px rgb(0 0 0 / .1);
+    overflow: hidden;
+    height: 72%;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.itemMainPost .--img {
+    width: 328px;
+    height: inherit;
+    display: block;
+}
+
+.itemMainPost .--title {
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: start;
+    color: #fff;
+    font-weight: 700;
+    padding-bottom: 14px;
+}
+
+.itemMainPost .--title a {
+    color: white;
+    text-decoration: none;
+}
+
+.itemMainPost .--title button {
+    background: none;
+    border: 0;
+    font-size: 18px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-weight: 600;
+    color: white;
+}
+
+.itemMainPost .--txt button {
+    margin-top: 13px;
+}
+
+.itemMainPost .--time {
+    background-image: linear-gradient(to right, #51aa59, #1c8281);
+    color: #fff;
+    padding: .25rem .5rem;
+    border-radius: 25px;
+    display: inline-block;
+    margin: .5rem 0;
+}
+
+.itemMainPost.lazyloaded:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 28%;
+    left: 0;
+    background: linear-gradient( 180deg, rgb(34 35 34 / 0%) 0%, rgba(54, 56, 55, 0) 44.27%), linear-gradient( 180deg, rgba(54, 56, 55, 0) 50.24%, rgb(24 24 24 / 77%) 82.29%, #1a1919 100%), url();
+}
+
+.itemMainPost .--excerp {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: start;
+}
+
+.itemMainPost .--link {
+    text-align: end;
+    width: 100%;
+    padding-top: 20px;
+    text-decoration: none;
+    color: #1e8380;
+}
+
+.itemMainPost .--txt {
+    position: absolute;
+    z-index: 1;
+    margin: 0 auto;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column;
+}
+
+.itemMainPost .--img {
+    height: 50vh;
+}
+
+button.btn-close {
+    position: absolute;
+    top: -.5rem;
+    right: 10px;
+    background: #1c8281;
+    border-radius: 50%;
+    width: 20px;
+    opacity: 1;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-close:hover {
+    opacity: 1;
+}
+
+button:focus:not(:focus-visible) {
+    box-shadow: none;
+}
+
+.modal-content {
+    position: static;
+    border: 0;
+    border-radius: 14px;
+    padding: 12px;
+    box-shadow: 1px 0px 15px 2px #888888;
+}
+
+.modal-body img {
+    width: 100%;
+    height: 500px;
+    display: block;
+    margin: auto;
+    padding: 1rem;
+    background: #FFFFFF;
+    box-shadow: 0 12px 24px rgb(0 0 0 / 10%);
+    object-fit: cover;
+}
+
+.modal-header .--time {
+    background-image: linear-gradient(to right, #51aa59, #1c8281);
+    color: #fff;
+    padding: .25rem .5rem;
+    border-radius: 25px;
+    display: inline-block;
+    margin: .5rem 0;
+}
+
+.modal-header {
+    flex-flow: column;
+    align-items: flex-start;
+    border-bottom: 0;
+}
+
+.modal-dialog-scrollable .modal-body {
+    /* overflow-y: none; */
+    /* overflow-y: clip; */
+}
+
+.modal-dialog.modal-dialog-scrollable {
+    max-width: 70%;
+}
+div#mainPostTitle {
+    background: url('/wp-content/uploads/2021/05/packground.jpg');
+    background-size: cover;
+    padding: 10px;
+}
+
+div#mainPostDetail {
+    background: url('/wp-content/uploads/2021/05/packground.jpg');
+    background-size: cover;
+    padding: 10px;
+}
+
+div#other {
+    background: url('/wp-content/uploads/2021/05/packground.jpg');
+    background-size: cover;
+    padding: 10px;
+}
+
+button {
+    background: none;
+    border: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #1e8380;
+}
+
+i.fas.fa-times.fa-lf {
+    color: white;
+}
+.modal--content {
+    margin-top: 1rem;
+}
+.modal-backdrop{
+    background: none;
+}
+@media (max-device-width:1024px) {
+    #news {
+        background-image: url('/wp-content/uploads/2021/05/packground.jpg');
+        background-size: cover;
+    }
+    .itemMainPost {
+        height: 70%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .modal-body img{
+        width: 100%;
+        height: auto;
+    }
+}
+}
+
+@media (min-device-width:641px) and (max-device-width:768px) {
+    #news {
+        background-image: url('/wp-content/uploads/2021/05/packground.jpg') !important;
+        background-size: cover;
+    }
+    .itemMainPost {
+        height: 32vh;
+    }
+    .modal-body img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-device-width: 640px) {
+    #news {
+        height: auto !important;
+        background-image: url('/wp-content/uploads/2021/05/packground.jpg');
+        background-size: cover;
+    }
+    #news .--featuredPost {
+        height: 70vh;
+        margin-bottom: 2rem;
+        width: 95vw;
+    }
+
+    #news .modal-dialog.modal-dialog-scrollable {
+        max-width: 100%;
+    }
+    #news .--others {
+        height: auto;
+        over-flow: hidden!important;
+    }
+    #news .--pageTitle h1 {
+        width: max-content;
+    }
+    #news .modal-content{
+        width: 100% !important;
+    }
+    #contact main {
+        margin-top: 7rem!important;
+    }
+    .itemContactForm {
+        margin-bottom: 0.25rem;
+    }
+    #news .--content {
+        display: flex;
+        justify-content: center;
+    }
+    .modal-dialog.modal-dialog-scrollable {
+        max-width: 100%;
+        padding: 10px;
+    }
+    .itemMainPost .--txt button {
+        margin-top: 20px;
+    }
+    .itemMainPost {
+        height: 50vh;
+    }
+    .modal-body img{
+        width: 100%;
+        height: auto;
+    }
+}
