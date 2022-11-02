@@ -134,27 +134,44 @@ jQuery(document).ready(function () {
     
     // <!-- submit form sheet -->
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzVzAD37ul6SP5Oq2X-nazjluT7zyL1m6s_V22PnuetqRT6V0iyzyQTSU1T3iBdLf5h/exec'
+    const chaty = document.querySelector('#chaty-ajax-contact-form-0');
+    const chaty_inputs = document.querySelector('.chaty-contact-inputs');
+    var successmsg = null;
+    chaty.addEventListener('submit', e => {
+        successmsg = createElementFromHTML('<div class="chaty-ajax-message" style="text-align: center;"></div>');
+        chaty_inputs.appendChild(successmsg);
+        e.preventDefault();
+        sendForm(chaty, successmsg);
+        return true;
+    });
     const form = document.forms['submit-to-google-sheet'];
     if (form == undefined) {
         return;
     }
-    const successmsg=document.querySelector(".wpcf7-response-output");
+    successmsg=document.querySelector(".wpcf7-response-output");
     // const errormsg=document.getElementById('errormsg');
     form.addEventListener('submit', e => {
+        e.preventDefault();
+        sendForm(form, successmsg);
+        return true;
+    });
+
+    function sendForm(form, successmsg) {
         successmsg.style.display ='block',
         successmsg.textContent = "Đang gửi...",
-        e.preventDefault(),
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then((response) => {
             // console.log('Success!', response);
             //show success message
             if (!response.ok) {
                 form.setAttribute('class', 'failed'),
+                successmsg.setAttribute('class', 'chaty-ajax-error-message'),
                 successmsg.textContent = "Có lỗi! Vui lòng thử lại.";
                 return;
             }
             form.setAttribute('class', 'sent'),
-            successmsg.textContent = "Cảm ơn bạn! Tin nhắn của bạn đã được gửi."
+            successmsg.setAttribute('class', 'chaty-ajax-success-message'),
+            successmsg.textContent = "Cảm ơn! Tin nhắn bạn đã được gửi."
         })
         .catch(error => 
             form.setAttribute('class', 'failed'),
@@ -162,6 +179,16 @@ jQuery(document).ready(function () {
             )
         //show error message
         // form.reset();
-    })
+    }
+
+    //<div class="chaty-ajax-success-message">Cảm ơn! Chúng tôi sẽ liên hệ lại.</div>
+    function createElementFromHTML(htmlString) {
+      var div = document.createElement('div');
+      div.innerHTML = htmlString.trim();
+
+      // Change this to div.childNodes to support multiple top-level nodes.
+      return div.firstChild;
+    }
 
 });
+

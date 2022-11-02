@@ -639,3 +639,7 @@ header .--registration a:hover {
 .fancybox__container {
     z-index: 999999;
 }
+
+.chaty-contact-form-box #chaty-submit-button-0 {
+    display: inherit !important;
+}
