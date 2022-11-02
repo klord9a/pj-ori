@@ -163,7 +163,7 @@ var chaty_settings = {"chaty_widgets":[{"id":0,"identifier":0,"settings":{"show_
 <div class="screen-reader-response">
 <p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul>
 </div>
-<form action="/lien-he/#wpcf7-f4-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
+<form name="submit-to-google-sheet">
 <div style="display: none;">
 <input type="hidden" name="_wpcf7" value="4">
 <input type="hidden" name="_wpcf7_version" value="5.4.2">
@@ -175,10 +175,10 @@ var chaty_settings = {"chaty_widgets":[{"id":0,"identifier":0,"settings":{"show_
 <div class="allform row">
 <div class="col-md-6">
 <div class="itemContactForm">
-                             <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Họ và tên*"></span>
+                             <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Họ và tên*" required></span>
                         </div>
 <div class="itemContactForm  ">
-                             <span class="wpcf7-form-control-wrap your-phone"><input type="tel" name="your-phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Điện thoại*"></span>
+                             <span class="wpcf7-form-control-wrap your-phone"><input type="tel" name="your-phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Điện thoại*" required></span>
                         </div>
 <div class="itemContactForm">
                             <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email"></span>
@@ -186,7 +186,7 @@ var chaty_settings = {"chaty_widgets":[{"id":0,"identifier":0,"settings":{"show_
 </div>
 <div class="col-md-6 d-flex flex-column align-items-center p-0">
 <div class="itemContactForm">
-                            <span class="wpcf7-form-control-wrap textarea-236"><textarea name="textarea-236" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Nội dung"></textarea></span>
+                            <span class="wpcf7-form-control-wrap textarea-236"><textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Nội dung"></textarea></span>
                         </div>
 <p>                        <button type="submit" class="btn btn-submitForm">GỬI THÔNG TIN</button>
                     </p>
@@ -272,11 +272,13 @@ var chaty_settings = {"chaty_widgets":[{"id":0,"identifier":0,"settings":{"show_
 var wpcf7 = {"api":{"root":"\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
 /* ]]> */
 </script>
-<script type="text/javascript" src="/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4.2" id="contact-form-7-js"></script>
+<!-- <script type="text/javascript" src="/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4.2" id="contact-form-7-js"></script> -->
 <script type="text/javascript" src="/wp-content/plugins/image-map-pro-wordpress/js/image-map-pro.min.js?ver=5.1.6" id="image-map-pro-dist-js-js"></script>
 
 <script>
     var anchors = [];
     var navigationTooltips = [];
 </script>
+
+
 </html>

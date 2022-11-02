@@ -131,5 +131,37 @@ jQuery(document).ready(function () {
     Fancybox.bind('.modal-content img');
     // Fancybox.bind("[data-fancybox]");
     // Fancybox.bind(".flickity-slider a");
+    
+    // <!-- submit form sheet -->
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzVzAD37ul6SP5Oq2X-nazjluT7zyL1m6s_V22PnuetqRT6V0iyzyQTSU1T3iBdLf5h/exec'
+    const form = document.forms['submit-to-google-sheet'];
+    if (form == undefined) {
+        return;
+    }
+    const successmsg=document.querySelector(".wpcf7-response-output");
+    // const errormsg=document.getElementById('errormsg');
+    form.addEventListener('submit', e => {
+        successmsg.style.display ='block',
+        successmsg.textContent = "Đang gửi...",
+        e.preventDefault(),
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then((response) => {
+            // console.log('Success!', response);
+            //show success message
+            if (!response.ok) {
+                form.setAttribute('class', 'failed'),
+                successmsg.textContent = "Có lỗi! Vui lòng thử lại.";
+                return;
+            }
+            form.setAttribute('class', 'sent'),
+            successmsg.textContent = "Cảm ơn bạn! Tin nhắn của bạn đã được gửi."
+        })
+        .catch(error => 
+            form.setAttribute('class', 'failed'),
+            //successmsg.textContent = "Có lỗi! Vui lòng thử lại."
+            )
+        //show error message
+        // form.reset();
+    })
 
 });
