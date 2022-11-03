@@ -136,6 +136,9 @@ jQuery(document).ready(function () {
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzVzAD37ul6SP5Oq2X-nazjluT7zyL1m6s_V22PnuetqRT6V0iyzyQTSU1T3iBdLf5h/exec'
     const chaty = document.querySelector('#chaty-ajax-contact-form-0');
     const chaty_inputs = document.querySelector('.chaty-contact-inputs');
+    [...chaty_inputs.querySelectorAll('input')].forEach((el) => {
+        el.setAttribute("required", "");
+    });
     var successmsg = null;
     chaty.addEventListener('submit', e => {
         successmsg = createElementFromHTML('<div class="chaty-ajax-message" style="text-align: center;"></div>');
@@ -158,8 +161,11 @@ jQuery(document).ready(function () {
 
     function sendForm(form, successmsg) {
         successmsg.style.display ='block',
-        successmsg.textContent = "Đang gửi...",
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        successmsg.textContent = "Đang gửi...";
+        var data = new FormData(form);
+        data.append('your-name', data.get('name') ?? data.get('your-name'));
+        data.append('your-phone', data.get('phone') ?? data.get('your-phone'));
+        fetch(scriptURL, { method: 'POST', body: data})
         .then((response) => {
             // console.log('Success!', response);
             //show success message
