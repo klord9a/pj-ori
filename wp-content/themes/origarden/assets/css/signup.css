@@ -452,7 +452,7 @@ td strong{
     section#procedure {
         height: max-content;
         padding-bottom: 2rem;
-        background-image: url('/wp-content/uploads/2021/05/packground.jpg');
+        background-image: url('/wp-content/uploads/2021/05/packground.webp');
     }
     section#procedure main {
         padding-top: 3rem;
@@ -538,7 +538,7 @@ td strong{
         right: -35px;
         top: 47%;
         transform: translateY(-50%);
-        background-image: url(/wp-content/uploads/2021/05/Muiten.png);
+        background-image: url(/wp-content/uploads/2021/05/Muiten.webp);
     }
     .itemPage:nth-child(2) {
         grid-column-start: 1;

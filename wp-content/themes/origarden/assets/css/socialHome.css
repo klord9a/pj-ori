@@ -736,17 +736,17 @@ section#commerceService {
 
 @media (max-width:768px) {
     section#socialHome {
-        background-image: url('/wp-content/uploads/2021/05/packground.jpg') !important;
+        background-image: url('/wp-content/uploads/2021/05/packground.webp') !important;
         background-size: cover;
         height: auto;
     }
     section#commerceHome {
-        background-image: url('/wp-content/uploads/2021/05/packground.jpg') !important;
+        background-image: url('/wp-content/uploads/2021/05/packground.webp') !important;
         background-size: cover;
         height: auto;
     }
     section#commerceService {
-        background-image: url('/wp-content/uploads/2021/05/packground.jpg') !important;
+        background-image: url('/wp-content/uploads/2021/05/packground.webp') !important;
         background-size: cover;
         height: auto;
     }

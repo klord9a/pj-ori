@@ -101,7 +101,7 @@ section#procedure {
     right: -35px;
     top: 47%;
     transform: translateY(-50%);
-    background-image: url('/wp-content/uploads/2021/05/Muiten.png');
+    background-image: url('/wp-content/uploads/2021/05/Muiten.webp');
 }
 .itemPage:nth-child(5) .--txt::after {
     content: '';
@@ -114,7 +114,7 @@ section#procedure {
 );
     top: 34%;
     left: -35px;
-    background-image: url(/wp-content/uploads/2021/05/Muiten.png);
+    background-image: url(/wp-content/uploads/2021/05/Muiten.webp);
 }
 .itemPage:nth-child(6) .--txt::after{
     top: 34%;
@@ -133,7 +133,7 @@ section#procedure {
     transform: rotate(180deg);
     top: 34%;
     right: -34px;
-    background-image: url('/wp-content/uploads/2021/05/Muiten.png');
+    background-image: url('/wp-content/uploads/2021/05/Muiten.webp');
 }
 .itemPage:nth-child(3) .--txt::after {
     position: absolute;
@@ -155,5 +155,5 @@ section#procedure {
     right: 50%;
     top: 100%;
     background-image: url(
-    '/wp-content/uploads/2021/05/Muiten.png');
+    '/wp-content/uploads/2021/05/Muiten.webp');
 }
