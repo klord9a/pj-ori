@@ -1,5 +1,5 @@
 
-jQuery(document).ready(function () {
+jQuery(document).ready(function ($) {
     $('.listItem .--item button [data-bs-toggle="pill"]').on('click', event => { window.location.assign(event.target.getAttribute('href')) });
     setTimeout(function () {
         $('.loadingPage').addClass('unactive');

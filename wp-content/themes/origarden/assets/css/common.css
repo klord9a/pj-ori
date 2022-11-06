@@ -643,3 +643,7 @@ header .--registration a:hover {
 .chaty-contact-form-box #chaty-submit-button-0 {
     display: inherit !important;
 }
+
+body {
+  overflow: hidden; /* Hide scrollbars */
+}
