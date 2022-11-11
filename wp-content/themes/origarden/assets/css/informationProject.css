@@ -574,8 +574,8 @@ i.round {
     .proPopup .--content i{
         padding: 0;
         width: max-content;
-        left: 95%;
-        top: 3%;
+        left: 90%;
+        top: 40%;
     }
     .notePopup {
         margin-top: 2rem;
