@@ -250,7 +250,7 @@ button:focus:not(:focus-visible) {
 }
 
 .modal-body img {
-    width: 100%;
+    width: auto;
     height: 500px;
     display: block;
     margin: auto;
