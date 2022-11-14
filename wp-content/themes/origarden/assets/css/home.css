@@ -932,7 +932,7 @@ p.txtcolor {
     .homeGround .--imgground img.--left{
         margin-top: 1rem;
         width: 100%;
-        height: 50vh;
+        /*height: 50vh;*/
     }
     .homeGround .--imgground img.--right{
         margin-top: 1rem;
